@@ -1,0 +1,42 @@
+### Cadastrar produto
+POST https://localhost:443/api/cadastro/create
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "nome": "Bolacha",
+    "senha": "1234",
+    "firstName": "teste",
+    "lastname": "teste"
+}
+
+### Listar todos produtos
+GET https://localhost:443/api/cadastro/list
+
+### Buscar produto pelo id
+GET https://localhost:443/api/cadastro/getbyid/1
+
+### Deletar um produto pelo nome
+DELETE https://localhost:443/api/cadastro/delete/
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "nome": "Bolacha",
+    "senha": "teste@teste.com",
+    "firstName": "teste",
+    "lastname": "teste"
+
+}
+
+### Alterar produto
+PUT https://localhost:443/api/cadastro/update
+
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "nome": "Biscoito",
+    "email": "teste@teste.com",
+    "senha" : "teste"
+}
